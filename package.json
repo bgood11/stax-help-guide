@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:single": "tsc -b && node scripts/build-single.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -13,7 +14,8 @@
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.6.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "vite-plugin-singlefile": "^2.3.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
