@@ -54,7 +54,7 @@ export default function ContentArea({
       </div>
 
       {/* Main content with transitions */}
-      <div className="flex-1 px-6 lg:px-10 py-8">
+      <div className="flex-1 px-6 lg:px-8 py-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSection}

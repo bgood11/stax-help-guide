@@ -31,11 +31,11 @@ export default function Sidebar({
   const navContent = (
     <div className="flex flex-col h-full bg-white">
       {/* Logo + close */}
-      <div className="flex items-center justify-between px-5 pt-5 pb-4 border-b border-stax-teal/10">
+      <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-stax-teal/10">
         <img
           src="/images/logos/stax-logo.png"
           alt="Stax"
-          className="h-8 w-auto"
+          className="h-7 w-auto"
         />
         <button
           onClick={onClose}
@@ -63,8 +63,8 @@ export default function Sidebar({
                     onClose();
                   }}
                   className={`
-                    group w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left
-                    text-sm font-medium transition-all duration-200 cursor-pointer
+                    group w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left
+                    text-[13px] font-medium transition-all duration-200 cursor-pointer
                     ${active
                       ? 'bg-stax-teal text-white shadow-md shadow-stax-teal/20'
                       : 'text-stax-dark/70 hover:bg-stax-light hover:text-stax-dark'
