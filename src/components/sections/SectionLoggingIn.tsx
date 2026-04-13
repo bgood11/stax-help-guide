@@ -80,9 +80,8 @@ export default function SectionLoggingIn() {
           <StepIndicator steps={firstLoginSteps} />
         </motion.div>
 
-        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
-          <ImageZoom src="/images/screenshots/clean/login-welcome-email.png" alt="First login welcome email" />
-          <ImageZoom src="/images/screenshots/clean/login-password-setup-before.png" alt="Password setup screen" />
+        <motion.div variants={fadeUp}>
+          <ImageZoom src="/images/screenshots/clean/login-password-setup-before.png" alt="Password setup screen" caption="The Change Your Password screen - enter a password meeting the requirements" />
         </motion.div>
 
         <motion.div variants={fadeUp}>
