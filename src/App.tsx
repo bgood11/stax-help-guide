@@ -272,7 +272,7 @@ export default function App() {
         />
 
         {/* Main content */}
-        <main className="h-full lg:ml-[280px] overflow-hidden">
+        <main className="h-full lg:ml-[280px] min-w-0">
           <ContentArea
             activeSection={activeSection}
             prevSection={prevSection}
