@@ -29,7 +29,7 @@ export const sections: Section[] = [
   {
     id: 'clearing-browsing-data',
     title: 'Clearing Browsing Data',
-    shortTitle: 'Clear Browser',
+    shortTitle: 'Clear Cache',
     icon: Trash2,
     pages: '11',
     keywords: ['browsing', 'cache', 'clear', 'chrome', 'edge', 'safari', 'iphone', 'ipad', 'video'],

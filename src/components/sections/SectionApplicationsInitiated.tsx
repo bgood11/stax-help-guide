@@ -89,15 +89,15 @@ export default function SectionApplicationsInitiated() {
         <motion.div variants={fadeUp} className="space-y-4">
           <h3 className="text-2xl font-semibold text-stax-teal">Cancelling an Application</h3>
           <p className="text-stax-dark/80">
-            If a customer decides not to proceed with their finance application, you can request a
-            cancellation. To do this, you will need the application&apos;s{" "}
-            <span className="font-semibold text-stax-teal">AP Number</span>. Contact Shermin with
-            the AP Number and request that the application be cancelled. The application will then
-            be updated on your Dashboard accordingly.
+            If the customer is not proceeding with the application, click on the AP number to
+            open the customer summary and press the{" "}
+            <span className="font-semibold text-stax-teal">'Loan Cancellation'</span> button.
+            See the Cancelling an Application section for full details.
           </p>
-          <Callout variant="warning">
-            You cannot cancel an application directly from the Dashboard. All cancellation requests
-            must go through Shermin using the AP Number as a reference.
+          <Callout variant="tip">
+            It is good practice to cancel applications that are not progressing rather than
+            leaving them to auto-cancel after 28 days. This keeps your dashboard clean and your
+            records accurate.
           </Callout>
         </motion.div>
 

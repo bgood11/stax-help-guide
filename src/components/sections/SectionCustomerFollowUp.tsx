@@ -1,13 +1,10 @@
-import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
-import Callout from "../ui/Callout";
+import { motion } from 'framer-motion';
+import ImageZoom from '../ui/ImageZoom';
+import Callout from '../ui/Callout';
 
 const stagger = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.15 },
-  },
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
 };
 
 const fadeUp = {
@@ -18,45 +15,45 @@ const fadeUp = {
 const tips = [
   {
     number: 1,
-    title: "Refresh Your Dashboard Regularly",
+    title: 'REFRESH YOUR DASHBOARD',
     content:
-      "Make it a habit to refresh your Stax Dashboard at the start of each working day and periodically throughout the day. Application statuses can change at any time as lenders process decisions, customers sign agreements, and payments are made. Refreshing ensures you are always looking at the most current information and can act on changes promptly. A simple browser refresh (F5 or Ctrl+R) is all it takes.",
+      "The dashboard does not auto-refresh. Once you are back on the Home page, to get updates you will need to either press 'Home' on the STAX navigation bar or 'refresh' your browser to receive updates.",
   },
   {
     number: 2,
-    title: "Follow Up on Referred Applications",
+    title: 'Follow up on all Referred applications',
     content:
-      "When an application is marked as 'Referred', it means the lender could not auto-approve it and has passed it to their underwriting team for manual review. This does not mean the application has been declined - many referred applications are ultimately approved. However, the process can take longer, so it is important to keep the customer informed. Let them know their application is being reviewed and that you will update them as soon as a decision is made. Check your Dashboard daily for status changes on referred applications.",
+      "We recommend you search 'Referred' applications as a minimum daily to ensure you don't have any current Referred applications outstanding. This means the lender is manually underwriting the application or waiting for information (normally from the customer) to make a decision. It may be worth a call to the customer to see if they have received an email requesting further information. Your Shermin BDM may also be able to help. Please note any information requested by a lender must be provided to them directly from the customer due to GDPR.",
   },
   {
     number: 3,
-    title: "Follow Up on Approved Applications",
+    title: 'Follow up on all Approved applications',
     content:
-      "Once an application is approved, time is of the essence. The customer needs to sign their credit agreement to move the process forward. Contact the customer promptly to congratulate them on their approval and remind them to check their email for the agreement to sign. If the agreement is not signed within a few days, follow up again - customers sometimes miss the email or forget to complete the signing. The sooner the agreement is signed, the sooner you can proceed towards payout.",
+      "Once approved, the customer will receive an email with details of how to e-Sign their agreement. We recommend not booking a survey or delivery/installation date until the customer has e-Signed their agreement and it is showing on STAX as 'Executed'. By searching 'Approved' in the STAX dashboard you can see which customers are yet to sign. If they haven't yet signed, call the customer to ensure they have received their agreement to e-Sign via email and to consolidate the sale. Within the first 24/48 hours from the sale is the optimum time a customer is likely to sign their finance agreement. An 'Approval' from a lender is limited and will be cancelled if the agreement remains unsigned.",
   },
   {
     number: 4,
-    title: "Monitor Executed Applications",
+    title: 'Executed applications',
     content:
-      "An 'Executed' application means the customer has signed their credit agreement. At this point, the next step is for a satisfaction note to be sent confirming that the work has been completed or goods have been delivered. Make sure your operations team is aware of executed applications so they can schedule and complete the work promptly. The faster the work is done, the sooner the satisfaction note can be sent and the payout process can begin.",
+      "Once the customer has e-Signed their agreement, it will show on STAX as 'Executed'. Then the customer's survey/installation/delivery dates can be arranged (subject to the withdrawal period). By searching 'Executed' in the STAX dashboard you can see which customers are in your pipeline for survey/fitting/delivery. On average an e-Signed finance agreement is valid for 180 days/6 months. Once you can see an agreement is 'Executed' in STAX, if the customer has paid a deposit and funds have been received by you, you can then select the 'DEPOSIT PAID' button in STAX. You will need to click on the AP Number from the dashboard which opens the customer record to do so.",
   },
   {
     number: 5,
-    title: "Track Satisfaction Notes Sent",
+    title: 'Executed - Sat Note Sent',
     content:
-      "When a satisfaction note has been sent, it means confirmation is being sought that the customer is happy with the work or delivery. This step is critical for unlocking the payout. Monitor these applications closely - if the satisfaction note is not accepted within a reasonable timeframe, follow up with the relevant parties to ensure there are no issues. Any delays at this stage directly impact how quickly you receive payment.",
+      "Once the installation/delivery is complete the 'SEND SATISFACTION NOTE' button can be pressed in STAX. Please DO NOT send the satisfaction note to the customer before the installation is complete - we have found this leads to customer dissatisfaction and in some cases order cancellation. Once you have sent the satisfaction note to the customer, we recommend a customer care call or before if this is your normal process. You can then search the dashboard to see when a customer has signed the satisfaction note and also those that are outstanding (we recommend checking after 24 hours on STAX).",
   },
   {
     number: 6,
-    title: "Confirm Sat Note Accepted & Payout Requested",
+    title: 'Sat Note Accepted and Payout Requested',
     content:
-      "Once the satisfaction note is accepted, a payout request is automatically submitted to the lender. This is a great milestone - it means the finance process is nearly complete. At this stage, the lender is processing the funds for release. Keep an eye on the Dashboard for the status to update to 'Payout Made'. If the payout seems delayed, you can contact Shermin with the AP Number to check on the progress.",
+      "When the customer has signed the satisfaction note the status will change to 'SAT NOTE ACCEPTED'. It is automatically sent to the lender by STAX to request payment. This status may only show briefly. Once received by the lender, the status will normally change to PAYOUT REQUESTED. If after 48 hours you are still seeing 'SAT NOTE ACCEPTED' please contact your Shermin BDM to investigate further. Payout Requested means the payout has been requested and received by the lender, but they have not yet released funds.",
   },
   {
     number: 7,
-    title: "Celebrate Payout Made - Application LIVE",
+    title: 'Payout Made - LIVE',
     content:
-      "When the status changes to 'Payout Made - LIVE', the lender has released the funds and the finance agreement is fully active. The customer's repayment schedule has begun, and you have been paid. This is the final and most satisfying stage of the process. Use this as an opportunity to review your pipeline - check for any other applications that may be stuck at earlier stages and take action to move them forward.",
+      "Once the application is showing as 'Payout Made - LIVE', the lender has then released funds to you and the customer's loan agreement is live. You will receive notification from the lender that the transaction is complete, and the funds will be transferred to the nominated bank account for you to cross reference with your records and customer contracts.",
   },
 ];
 
@@ -69,22 +66,16 @@ export default function SectionCustomerFollowUp() {
       className="space-y-10"
     >
       <header>
-        <h2 className="text-3xl font-bold text-stax-dark mb-2">Customer Follow-Up Tips</h2>
+        <h2 className="text-3xl font-bold text-stax-dark mb-2">
+          Customer Follow Up Hints and Tips
+        </h2>
         <p className="text-lg text-stax-dark/70">
-          Proactive follow-up at every stage of the application process improves conversion rates
-          and speeds up payouts. Use these seven tips to stay on top of your pipeline.
+          Once the application has been submitted, you are waiting for a decision to be made
+          from your lending panel. Use these tips to manage each stage effectively.
         </p>
       </header>
 
       <motion.div variants={stagger} initial="hidden" animate="visible" className="space-y-6">
-        <motion.div variants={fadeUp}>
-          <Callout variant="important">
-            Regular follow-up is the single most effective action you can take to improve your
-            finance conversion rates. Even a brief phone call or email can make the difference
-            between a completed application and an abandoned one.
-          </Callout>
-        </motion.div>
-
         {tips.map((tip) => (
           <motion.div
             key={tip.number}
@@ -104,45 +95,26 @@ export default function SectionCustomerFollowUp() {
         ))}
 
         <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-19.png"
-            alt="Customer follow-up tips - refreshing Dashboard"
-          />
+          <Callout variant="warning" title="GDPR Reminder">
+            Please note any information requested by a lender must be provided to them directly
+            from the customer due to GDPR. You cannot send customer information to a lender on
+            their behalf.
+          </Callout>
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-20.png"
-            alt="Follow-up guidance for referred and approved applications"
-          />
+        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
+          <ImageZoom src="/images/screenshots/page-19.png" alt="Customer follow-up - refresh dashboard and referred applications" />
+          <ImageZoom src="/images/screenshots/page-20.png" alt="Follow-up on approved applications" />
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-21.png"
-            alt="Executed applications and satisfaction notes"
-          />
+        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
+          <ImageZoom src="/images/screenshots/page-21.png" alt="Executed applications and deposit paid" />
+          <ImageZoom src="/images/screenshots/page-22.png" alt="Satisfaction note sent" />
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-22.png"
-            alt="Satisfaction note tracking"
-          />
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-23.png"
-            alt="Payout requested and processing"
-          />
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-24.png"
-            alt="Payout made - application LIVE"
-          />
+        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
+          <ImageZoom src="/images/screenshots/page-23.png" alt="Sat note accepted and payout requested" />
+          <ImageZoom src="/images/screenshots/page-24.png" alt="Payout made - LIVE" />
         </motion.div>
       </motion.div>
     </motion.article>
