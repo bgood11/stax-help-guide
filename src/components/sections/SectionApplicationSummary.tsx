@@ -29,7 +29,7 @@ function SectionApplicationSummary() {
         <p className="text-stax-dark leading-relaxed">
           At the top of the Application Summary, you will see the customer's
           name, application reference number, and the current stage of the
-          application. The blue action buttons are displayed prominently — these
+          application. The blue action buttons are displayed prominently - these
           allow you to perform key actions such as cancelling the loan, sending
           the satisfaction note, or submitting a loan amendment.
         </p>
@@ -66,7 +66,7 @@ function SectionApplicationSummary() {
             <strong>Important:</strong> If the lender has changed any details
             directly (for example, adjusted the loan amount), you must contact
             STAX to update the application record. Do not attempt to modify
-            lender-changed details through the platform — contact{" "}
+            lender-changed details through the platform - contact{" "}
             <a
               href="mailto:salessupport@sherminfinance.co.uk"
               className="font-semibold text-stax-teal underline"
@@ -98,7 +98,7 @@ function SectionApplicationSummary() {
           <div className="rounded-lg border border-gray-200 bg-white p-4">
             <h4 className="font-semibold text-stax-dark">Requested Terms</h4>
             <p className="mt-1 text-sm text-stax-dark">
-              The original terms submitted in the application — including APR,
+              The original terms submitted in the application - including APR,
               Term (months), Monthly Payment, and Total Amount Repayable.
             </p>
           </div>
@@ -106,7 +106,7 @@ function SectionApplicationSummary() {
             <h4 className="font-semibold text-stax-dark">Finalised Terms</h4>
             <p className="mt-1 text-sm text-stax-dark">
               The terms confirmed by the lender after approval. These may differ
-              slightly from the requested terms — including APR, Term, Monthly
+              slightly from the requested terms - including APR, Term, Monthly
               Payment, and Total Amount Repayable.
             </p>
           </div>
@@ -142,7 +142,7 @@ function SectionApplicationSummary() {
           The timeline records stages such as Application Initiated, Application
           Submitted, Approved, E-Sign Sent, Executed, Deposit Paid, Satisfaction
           Note Sent, and Payout Made. Only the <strong>first date</strong> is
-          shown for each stage — if a stage was revisited (e.g. after an
+          shown for each stage - if a stage was revisited (e.g. after an
           amendment), the original date is retained.
         </p>
 

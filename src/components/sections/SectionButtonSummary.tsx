@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
 import Callout from "../ui/Callout";
 import DataTable from "../ui/DataTable";
 
@@ -9,12 +8,12 @@ const rows = [
   [
     "Loan Cancellation",
     "All stages up to Payout Made",
-    "Cancels the finance application entirely. Once cancelled, this cannot be undone — a new application must be submitted if the customer wishes to proceed.",
+    "Cancels the finance application entirely. Once cancelled, this cannot be undone - a new application must be submitted if the customer wishes to proceed.",
   ],
   [
     "Resume",
     "Application Initiated only",
-    "Resumes an application that has been started but not yet submitted to the lender. DON'T use this button if the application link has already been sent to the customer — doing so may cause duplication issues.",
+    "Resumes an application that has been started but not yet submitted to the lender. DON'T use this button if the application link has already been sent to the customer - doing so may cause duplication issues.",
   ],
   [
     "Deposit Paid",
@@ -74,7 +73,7 @@ function SectionButtonSummary() {
         </p>
         <ol className="mt-2 list-decimal space-y-1 pl-6 text-stax-dark">
           <li>
-            Customer signs the E-Sign — application moves to{" "}
+            Customer signs the E-Sign - application moves to{" "}
             <strong>Executed</strong>
           </li>
           <li>
@@ -86,15 +85,11 @@ function SectionButtonSummary() {
             installation is complete
           </li>
           <li>
-            Customer signs the satisfaction note — payout is triggered
+            Customer signs the satisfaction note - payout is triggered
           </li>
         </ol>
       </div>
 
-      <ImageZoom
-        src="/images/screenshots/page-32.png"
-        alt="Application summary screen showing the available action buttons"
-      />
     </motion.article>
   );
 }

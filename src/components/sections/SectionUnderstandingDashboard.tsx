@@ -100,7 +100,7 @@ export default function SectionUnderstandingDashboard() {
               <h4 className="font-semibold text-stax-dark">Why is the AP Number Important?</h4>
               <p className="text-sm text-stax-dark/70">
                 The AP Number is the quickest way to locate a specific application on your
-                Dashboard. It is also required whenever you contact Shermin for support — always have
+                Dashboard. It is also required whenever you contact Shermin for support - always have
                 the AP Number ready so your query can be resolved as quickly as possible.
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function SectionUnderstandingDashboard() {
               <h4 className="font-semibold text-stax-dark">Dashboard Stage &amp; Status</h4>
               <p className="text-sm text-stax-dark/70">
                 Alongside the AP Number, the Dashboard shows the current Stage and Status of each
-                application. These tell you exactly where the application is in the process — from
+                application. These tell you exactly where the application is in the process - from
                 initiation through to payout. See the Dashboard Glossary section for a full
                 explanation of each Stage and Status.
               </p>

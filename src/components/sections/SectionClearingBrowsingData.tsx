@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
 import VideoLink from "../ui/VideoLink";
 
 const stagger = {
@@ -71,12 +70,6 @@ export default function SectionClearingBrowsingData() {
           ))}
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-11.png"
-            alt="Clearing browsing data instructions overview"
-          />
-        </motion.div>
       </motion.div>
     </motion.article>
   );

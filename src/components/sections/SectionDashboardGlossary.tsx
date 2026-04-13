@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import ImageZoom from '../ui/ImageZoom';
 import DataTable from '../ui/DataTable';
 
 const stagger = {
@@ -49,27 +48,19 @@ export default function SectionDashboardGlossary() {
               [
                 'Pending Decision',
                 'Submitted',
-                'SUBMISSION = Application only partially submitted. Thank you screen exited before full submission completed — NOT REACHED LENDER. Contact Shermin to action resubmission.',
+                'SUBMISSION = Application only partially submitted. Thank you screen exited before full submission completed - NOT REACHED LENDER. Contact Shermin to action resubmission.',
               ],
               [
                 'Pending Decision',
                 'Exception',
-                'EXCEPTION = An error has occurred during submission — DO NOT CREATE A NEW APPLICATION. Contact Shermin to investigate.',
+                'EXCEPTION = An error has occurred during submission - DO NOT CREATE A NEW APPLICATION. Contact Shermin to investigate.',
               ],
               [
                 'Pending Decision',
                 'Referred',
-                "The lender has yet to make a final decision on the application — often waiting for additional information requested directly with the customer and in some instances the retailer. 'Underwriting Notes' show in the 'Lender' concertina's within STAX — available with some lenders. All information MUST be sent to the lender by the customer due to GDPR. For referred applications — please ask your BDM how long an approval is valid for with your lending panel.",
+                "The lender has yet to make a final decision on the application - often waiting for additional information requested directly with the customer and in some instances the retailer. 'Underwriting Notes' show in the 'Lender' concertina's within STAX - available with some lenders. All information MUST be sent to the lender by the customer due to GDPR. For referred applications - please ask your BDM how long an approval is valid for with your lending panel.",
               ],
             ]}
-          />
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-12.png"
-            alt="Dashboard glossary — early stages"
-            caption="Dashboard Glossary Part 1 — PDF page 12"
           />
         </motion.div>
 
@@ -83,17 +74,17 @@ export default function SectionDashboardGlossary() {
               [
                 'Decision Made',
                 'Approved / Rejected',
-                "A decision has been made for this application — refer to Application Status for decision made on your 'Home' screen/dashboard. For approved applications — please ask your BDM how long an approval is valid for with your lending panel — they are only valid for a limited time if a customer does not esign an agreement.",
+                "A decision has been made for this application - refer to Application Status for decision made on your 'Home' screen/dashboard. For approved applications - please ask your BDM how long an approval is valid for with your lending panel - they are only valid for a limited time if a customer does not esign an agreement.",
               ],
               [
                 'Contract Signed',
                 'Executed',
-                'The customer has eSigned the application form — also known as executed. Please ask your BDM how long an execution is valid for with your lending panel — they are valid for a limited time.',
+                'The customer has eSigned the application form - also known as executed. Please ask your BDM how long an execution is valid for with your lending panel - they are valid for a limited time.',
               ],
               [
                 'Deposit Paid',
                 'Executed',
-                "The customer has eSigned the application form — also known as executed and the retailer has marked the deposit as paid. This can only be done after 'Contract Signed' stage.",
+                "The customer has eSigned the application form - also known as executed and the retailer has marked the deposit as paid. This can only be done after 'Contract Signed' stage.",
               ],
               [
                 'Sat Note Sent',
@@ -103,7 +94,7 @@ export default function SectionDashboardGlossary() {
               [
                 'Sat Note Accepted',
                 'Executed',
-                'The customer has eSigned the satisfaction note — which is automatically sent to the lender to be reviewed for payout.',
+                'The customer has eSigned the satisfaction note - which is automatically sent to the lender to be reviewed for payout.',
               ],
               [
                 'Payout Requested',
@@ -134,13 +125,6 @@ export default function SectionDashboardGlossary() {
           />
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-13.png"
-            alt="Dashboard glossary — later stages"
-            caption="Dashboard Glossary Part 2 — PDF page 13"
-          />
-        </motion.div>
       </motion.div>
     </motion.article>
   );

@@ -22,7 +22,7 @@ const cancellationSteps = [
   {
     title: "Enter Cancellation Reason",
     description:
-      "You will be prompted to enter a reason for cancelling the application. Provide a clear and accurate reason — this is recorded against the application for audit purposes.",
+      "You will be prompted to enter a reason for cancelling the application. Provide a clear and accurate reason - this is recorded against the application for audit purposes.",
   },
   {
     title: "Click Confirm Cancellation",
@@ -66,7 +66,7 @@ function SectionCancellingApplication() {
           The Loan Cancellation button is available at{" "}
           <strong>all stages</strong> of the application, from Application
           Initiated right through to Payout Made. Once an application is
-          cancelled, it cannot be reinstated — a completely new application must
+          cancelled, it cannot be reinstated - a completely new application must
           be submitted if the customer changes their mind.
         </p>
       </div>

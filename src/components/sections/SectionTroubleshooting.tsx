@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
 import Callout from "../ui/Callout";
 
 function SectionTroubleshooting() {
@@ -79,7 +78,7 @@ function SectionTroubleshooting() {
               If not in the Inbox, check the <strong>Spam/Junk</strong> folder
             </li>
             <li>
-              Also check the <strong>Trash/Deleted Items</strong> folder — some
+              Also check the <strong>Trash/Deleted Items</strong> folder - some
               filters may auto-delete messages
             </li>
             <li>
@@ -100,7 +99,7 @@ function SectionTroubleshooting() {
           This issue is not limited to Hotmail users. Some customers with{" "}
           <strong>@outlook.com</strong> or <strong>@outlook.co.uk</strong>{" "}
           addresses may also experience the same problem if they are using an
-          outdated desktop or mobile email client. The same solution applies —
+          outdated desktop or mobile email client. The same solution applies -
           direct them to log in via the browser at{" "}
           <strong>Outlook.com</strong> to check for the missing email.
         </p>
@@ -116,10 +115,6 @@ function SectionTroubleshooting() {
         </p>
       </Callout>
 
-      <ImageZoom
-        src="/images/screenshots/page-35.png"
-        alt="Troubleshooting guide for Hotmail and Outlook email issues"
-      />
     </motion.article>
   );
 }

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
+
 import Callout from "../ui/Callout";
 import DataTable from "../ui/DataTable";
 
@@ -41,7 +41,7 @@ function SectionDocumentsSent() {
             customer must sign electronically. This is sent{" "}
             <strong>automatically</strong> once the application has been approved
             by the lender. The email address it is sent from varies depending on
-            the lender — see the table below.
+            the lender - see the table below.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ function SectionDocumentsSent() {
           <p className="mt-1 text-stax-dark">
             The satisfaction note confirms the customer is happy with the
             installation and triggers the payout process. This is{" "}
-            <strong>not</strong> sent automatically — it is triggered by the
+            <strong>not</strong> sent automatically - it is triggered by the
             retailer clicking the{" "}
             <span className="rounded bg-stax-teal/10 px-1.5 py-0.5 font-mono text-sm font-semibold text-stax-teal">
               SEND SAT NOTE
@@ -82,10 +82,6 @@ function SectionDocumentsSent() {
         </p>
       </Callout>
 
-      <ImageZoom
-        src="/images/screenshots/page-26.png"
-        alt="Documents sent to the customer — email addresses by lender"
-      />
     </motion.article>
   );
 }

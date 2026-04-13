@@ -25,7 +25,7 @@ const loginFlowSteps = [
   {
     title: "Set Your Password",
     description:
-      "Click the link in the email to set up your password. Choose a strong password that you will remember — you will need it every time you log in.",
+      "Click the link in the email to set up your password. Choose a strong password that you will remember - you will need it every time you log in.",
   },
   {
     title: "Arrive at the Dashboard",
@@ -68,7 +68,7 @@ const loginTips = [
   "Always use the same browser you originally set up your account with to avoid issues.",
   "Bookmark www.staxpay.co.uk so you never have to search for the login page.",
   "If you do not receive a verification code, check your spam/junk folder first.",
-  "Clear your browsing data regularly to prevent login errors — see the Clearing Browsing Data section.",
+  "Clear your browsing data regularly to prevent login errors - see the Clearing Browsing Data section.",
   "Never share your login credentials with anyone. Each user should have their own Stax account.",
   "If you are locked out or experiencing persistent issues, contact Shermin with your details for assistance.",
 ];
@@ -84,7 +84,7 @@ export default function SectionLoggingIn() {
       <header>
         <h2 className="text-3xl font-bold text-stax-dark mb-2">Logging In to Stax</h2>
         <p className="text-lg text-stax-dark/70">
-          Everything you need to know about accessing your Stax account — from your very first login
+          Everything you need to know about accessing your Stax account - from your very first login
           through to troubleshooting common issues.
         </p>
       </header>
@@ -117,7 +117,7 @@ export default function SectionLoggingIn() {
           <p className="text-stax-dark/80 mb-4">
             Your password must meet security requirements. When you click the link in your welcome
             email, you will be prompted to create a password. Make sure it is something secure but
-            memorable — you will need it every time you log in to Stax.
+            memorable - you will need it every time you log in to Stax.
           </p>
           <Callout variant="warning">
             Do not share your password with colleagues. Each team member should have their own
@@ -138,7 +138,7 @@ export default function SectionLoggingIn() {
           <p className="text-stax-dark/80 mb-4">
             After setting your password, you will land on your Stax Dashboard. This is the central
             hub where you can view, track, and manage all of your finance applications. Take a
-            moment to familiarise yourself with the layout — the Dashboard sections are covered in
+            moment to familiarise yourself with the layout - the Dashboard sections are covered in
             detail later in this guide.
           </p>
         </motion.div>

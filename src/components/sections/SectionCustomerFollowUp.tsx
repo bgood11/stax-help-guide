@@ -26,13 +26,13 @@ const tips = [
     number: 2,
     title: "Follow Up on Referred Applications",
     content:
-      "When an application is marked as 'Referred', it means the lender could not auto-approve it and has passed it to their underwriting team for manual review. This does not mean the application has been declined — many referred applications are ultimately approved. However, the process can take longer, so it is important to keep the customer informed. Let them know their application is being reviewed and that you will update them as soon as a decision is made. Check your Dashboard daily for status changes on referred applications.",
+      "When an application is marked as 'Referred', it means the lender could not auto-approve it and has passed it to their underwriting team for manual review. This does not mean the application has been declined - many referred applications are ultimately approved. However, the process can take longer, so it is important to keep the customer informed. Let them know their application is being reviewed and that you will update them as soon as a decision is made. Check your Dashboard daily for status changes on referred applications.",
   },
   {
     number: 3,
     title: "Follow Up on Approved Applications",
     content:
-      "Once an application is approved, time is of the essence. The customer needs to sign their credit agreement to move the process forward. Contact the customer promptly to congratulate them on their approval and remind them to check their email for the agreement to sign. If the agreement is not signed within a few days, follow up again — customers sometimes miss the email or forget to complete the signing. The sooner the agreement is signed, the sooner you can proceed towards payout.",
+      "Once an application is approved, time is of the essence. The customer needs to sign their credit agreement to move the process forward. Contact the customer promptly to congratulate them on their approval and remind them to check their email for the agreement to sign. If the agreement is not signed within a few days, follow up again - customers sometimes miss the email or forget to complete the signing. The sooner the agreement is signed, the sooner you can proceed towards payout.",
   },
   {
     number: 4,
@@ -44,19 +44,19 @@ const tips = [
     number: 5,
     title: "Track Satisfaction Notes Sent",
     content:
-      "When a satisfaction note has been sent, it means confirmation is being sought that the customer is happy with the work or delivery. This step is critical for unlocking the payout. Monitor these applications closely — if the satisfaction note is not accepted within a reasonable timeframe, follow up with the relevant parties to ensure there are no issues. Any delays at this stage directly impact how quickly you receive payment.",
+      "When a satisfaction note has been sent, it means confirmation is being sought that the customer is happy with the work or delivery. This step is critical for unlocking the payout. Monitor these applications closely - if the satisfaction note is not accepted within a reasonable timeframe, follow up with the relevant parties to ensure there are no issues. Any delays at this stage directly impact how quickly you receive payment.",
   },
   {
     number: 6,
     title: "Confirm Sat Note Accepted & Payout Requested",
     content:
-      "Once the satisfaction note is accepted, a payout request is automatically submitted to the lender. This is a great milestone — it means the finance process is nearly complete. At this stage, the lender is processing the funds for release. Keep an eye on the Dashboard for the status to update to 'Payout Made'. If the payout seems delayed, you can contact Shermin with the AP Number to check on the progress.",
+      "Once the satisfaction note is accepted, a payout request is automatically submitted to the lender. This is a great milestone - it means the finance process is nearly complete. At this stage, the lender is processing the funds for release. Keep an eye on the Dashboard for the status to update to 'Payout Made'. If the payout seems delayed, you can contact Shermin with the AP Number to check on the progress.",
   },
   {
     number: 7,
-    title: "Celebrate Payout Made — Application LIVE",
+    title: "Celebrate Payout Made - Application LIVE",
     content:
-      "When the status changes to 'Payout Made - LIVE', the lender has released the funds and the finance agreement is fully active. The customer's repayment schedule has begun, and you have been paid. This is the final and most satisfying stage of the process. Use this as an opportunity to review your pipeline — check for any other applications that may be stuck at earlier stages and take action to move them forward.",
+      "When the status changes to 'Payout Made - LIVE', the lender has released the funds and the finance agreement is fully active. The customer's repayment schedule has begun, and you have been paid. This is the final and most satisfying stage of the process. Use this as an opportunity to review your pipeline - check for any other applications that may be stuck at earlier stages and take action to move them forward.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function SectionCustomerFollowUp() {
         <motion.div variants={fadeUp}>
           <ImageZoom
             src="/images/screenshots/page-19.png"
-            alt="Customer follow-up tips — refreshing Dashboard"
+            alt="Customer follow-up tips - refreshing Dashboard"
           />
         </motion.div>
 
@@ -141,7 +141,7 @@ export default function SectionCustomerFollowUp() {
         <motion.div variants={fadeUp}>
           <ImageZoom
             src="/images/screenshots/page-24.png"
-            alt="Payout made — application LIVE"
+            alt="Payout made - application LIVE"
           />
         </motion.div>
       </motion.div>

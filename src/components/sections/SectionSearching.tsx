@@ -48,7 +48,7 @@ const searchCriteria = [
   {
     label: "Stages / Statuses",
     description:
-      "Filter by application stage or status to see all applications at a particular point in the process — for example, all 'Referred' or 'Approved' applications.",
+      "Filter by application stage or status to see all applications at a particular point in the process - for example, all 'Referred' or 'Approved' applications.",
   },
   {
     label: "Branches",

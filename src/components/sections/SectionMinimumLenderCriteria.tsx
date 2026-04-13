@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
 import Callout from "../ui/Callout";
 import DataTable from "../ui/DataTable";
 
@@ -168,10 +167,6 @@ function SectionMinimumLenderCriteria() {
         </ul>
       </div>
 
-      <ImageZoom
-        src="/images/screenshots/page-27.png"
-        alt="Minimum lender criteria comparison table across all six lenders"
-      />
     </motion.article>
   );
 }

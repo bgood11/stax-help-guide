@@ -12,12 +12,12 @@ const amendmentSteps = [
   {
     title: "Review the Amendment Pop-Up",
     description:
-      "A pop-up dialog will appear showing the current loan details. If the lender has a Pre-Approved Loan Limit, this will be displayed in red at the top of the pop-up — you cannot exceed this amount.",
+      "A pop-up dialog will appear showing the current loan details. If the lender has a Pre-Approved Loan Limit, this will be displayed in red at the top of the pop-up - you cannot exceed this amount.",
   },
   {
     title: "Change Purchase Amount and Deposit",
     description:
-      "You can only change the Purchase Amount and Deposit fields. The Term, APR, and product type cannot be changed through an amendment — if these need to change, a new application is required. Adjust the values as needed.",
+      "You can only change the Purchase Amount and Deposit fields. The Term, APR, and product type cannot be changed through an amendment - if these need to change, a new application is required. Adjust the values as needed.",
   },
   {
     title: "Review Auto-Updated Calculations",
@@ -62,7 +62,7 @@ function SectionLoanAmendments() {
         Loan amendments allow you to modify the financial details of an approved
         application without submitting a completely new application. This is
         useful when the purchase amount or deposit changes after the initial
-        approval — for example, if the scope of work has increased or decreased.
+        approval - for example, if the scope of work has increased or decreased.
       </p>
 
       {/* Overview */}
@@ -73,7 +73,7 @@ function SectionLoanAmendments() {
           <div className="rounded-lg border border-gray-200 bg-white p-4">
             <h4 className="font-semibold text-stax-dark">Availability</h4>
             <p className="mt-1 text-sm text-stax-dark">
-              Only available for <strong>some lenders</strong> — currently BNP
+              Only available for <strong>some lenders</strong> - currently BNP
               Paribas and V12. Not available for THIS Bank, Propensio, ZOPA, or
               HUMM.
             </p>

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import ImageZoom from '../ui/ImageZoom';
 import Callout from '../ui/Callout';
 import DataTable from '../ui/DataTable';
 
@@ -63,13 +62,6 @@ export default function SectionCreditAgreementExpiry() {
           </Callout>
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom
-            src="/images/screenshots/page-25.png"
-            alt="Credit agreement expiry periods by lender"
-            caption="Credit Agreement Expiry — PDF page 25"
-          />
-        </motion.div>
       </motion.div>
     </motion.article>
   );
