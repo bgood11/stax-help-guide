@@ -250,7 +250,7 @@ export default function App() {
   const ActiveComponent = sectionComponents[activeSection];
 
   return (
-    <div className="min-h-screen bg-stax-light/40">
+    <div className="h-screen flex flex-col bg-stax-light/40 overflow-hidden">
       {/* Header */}
       <Header
         onMenuToggle={toggleSidebar}
@@ -259,8 +259,8 @@ export default function App() {
         completedCount={completed.size}
       />
 
-      {/* Grid layout */}
-      <div className="grid lg:grid-cols-[280px_1fr] min-h-screen pt-16">
+      {/* Layout */}
+      <div className="flex-1 overflow-hidden">
         {/* Sidebar */}
         <Sidebar
           activeSection={activeSection}
@@ -272,7 +272,7 @@ export default function App() {
         />
 
         {/* Main content */}
-        <main className="min-w-0">
+        <main className="h-full lg:ml-[280px] overflow-hidden">
           <ContentArea
             activeSection={activeSection}
             prevSection={prevSection}

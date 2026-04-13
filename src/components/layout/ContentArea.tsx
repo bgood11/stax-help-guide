@@ -36,7 +36,7 @@ export default function ContentArea({
   const currentIndex = sections.findIndex(s => s.id === activeSection);
 
   return (
-    <div className="flex flex-col min-h-[calc(100vh-4rem)] content-area">
+    <div className="flex flex-col h-full overflow-y-auto content-area">
       {/* Breadcrumb */}
       <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-stax-teal/5">
         <div className="flex items-center gap-2 px-6 lg:px-10 py-3 text-sm">

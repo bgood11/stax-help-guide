@@ -21,7 +21,11 @@ export function useProgress() {
   const markComplete = useCallback((sectionId: string) => {
     setCompleted(prev => {
       const next = new Set(prev);
-      next.add(sectionId);
+      if (next.has(sectionId)) {
+        next.delete(sectionId);
+      } else {
+        next.add(sectionId);
+      }
       saveProgress(next);
       return next;
     });
