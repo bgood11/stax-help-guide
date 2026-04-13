@@ -49,11 +49,13 @@ function SectionMinimumLenderCriteria() {
 
       <Callout variant="important">
         <p>
-          <strong>Key difference:</strong> HUMM is the only lender that accepts
+          <strong>Key differences:</strong> HUMM is the only lender that accepts
           both <strong>Homeowners</strong> and <strong>Tenants</strong>. All
-          other lenders require the applicant to be a homeowner. ZOPA requires a
-          minimum age of <strong>21</strong>, while all other lenders accept
-          applicants from age <strong>18</strong>.
+          other lenders require the applicant to be a homeowner. THIS Bank and
+          Propensio require a minimum age of <strong>21</strong>, while all other
+          lenders accept applicants from age <strong>18</strong>. ZOPA does not
+          allow installation at another address. Only BNP Paribas and V12
+          support loan amendments on STAX.
         </p>
       </Callout>
 

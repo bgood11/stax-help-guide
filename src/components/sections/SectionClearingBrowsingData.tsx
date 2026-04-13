@@ -15,7 +15,7 @@ const fadeUp = {
 
 const videoGuides = [
   { title: 'Google Chrome', url: 'https://www.loom.com/share/ef242050f99746e399d0db687cf0c10b' },
-  { title: 'Microsoft Edge', url: 'https://www.loom.com/share/47af1079918341458of793c077ed3261' },
+  { title: 'Microsoft Edge', url: 'https://www.loom.com/share/47af10799183414580f793c077ed3261' },
   { title: 'Safari on iPhone', url: 'https://www.loom.com/share/0d51135a573242459edfddec6d6f6da2' },
   { title: 'Safari on iPad', url: 'https://www.loom.com/share/159c40c7e5fa42959b87080e4ca8bf0c' },
 ];
