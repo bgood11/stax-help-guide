@@ -74,13 +74,20 @@ function SectionCancellingApplication() {
       <StepIndicator steps={cancellationSteps} />
 
       <ImageZoom
-        src="/images/screenshots/page-33.png"
+        src="/images/screenshots/clean/cancel-confirm-dialog.png"
         alt="Loan cancellation pop-up confirmation dialog"
       />
 
       <ImageZoom
-        src="/images/screenshots/page-34.png"
-        alt="Cancellation success message and updated dashboard"
+        src="/images/screenshots/clean/cancel-reason-input.png"
+        alt="Cancel reason input field"
+        caption="Enter your reason for cancelling and click Confirm Cancellation"
+      />
+
+      <ImageZoom
+        src="/images/screenshots/clean/cancel-success-banner.png"
+        alt="Cancellation success confirmation"
+        caption="Success message confirming your cancel request has been submitted"
       />
 
       <Callout variant="warning">

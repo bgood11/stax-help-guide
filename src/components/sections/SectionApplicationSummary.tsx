@@ -42,7 +42,7 @@ function SectionApplicationSummary() {
         </p>
 
         <ImageZoom
-          src="/images/screenshots/page-28.png"
+          src="/images/screenshots/clean/app-summary-page.png"
           alt="Customer summary section showing AP number and blue action buttons"
         />
       </section>
@@ -78,7 +78,7 @@ function SectionApplicationSummary() {
         </Callout>
 
         <ImageZoom
-          src="/images/screenshots/page-29.png"
+          src="/images/screenshots/clean/app-summary-page.png"
           alt="Customer details section with personal and financial information"
         />
       </section>
@@ -122,7 +122,7 @@ function SectionApplicationSummary() {
         </Callout>
 
         <ImageZoom
-          src="/images/screenshots/page-30.png"
+          src="/images/screenshots/clean/app-summary-lender-details.png"
           alt="Lender details showing Requested versus Finalised Terms"
         />
       </section>
@@ -147,7 +147,7 @@ function SectionApplicationSummary() {
         </p>
 
         <ImageZoom
-          src="/images/screenshots/page-31.png"
+          src="/images/screenshots/clean/app-summary-timeline.png"
           alt="Application flow timeline showing chronological stage progression"
         />
       </section>

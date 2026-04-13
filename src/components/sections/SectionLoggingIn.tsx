@@ -81,12 +81,12 @@ export default function SectionLoggingIn() {
         </motion.div>
 
         <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
-          <ImageZoom src="/images/screenshots/page-04.png" alt="First login welcome email" />
-          <ImageZoom src="/images/screenshots/page-05.png" alt="Password setup screen" />
+          <ImageZoom src="/images/screenshots/clean/login-welcome-email.png" alt="First login welcome email" />
+          <ImageZoom src="/images/screenshots/clean/login-password-setup-before.png" alt="Password setup screen" />
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <ImageZoom src="/images/screenshots/page-06.png" alt="STAX dashboard on first login" caption="Once complete you will be directed to the STAX dashboard" />
+          <ImageZoom src="/images/screenshots/clean/login-dashboard-arrival.png" alt="STAX dashboard on first login" caption="Once complete you will be directed to the STAX dashboard" />
         </motion.div>
       </motion.div>
 
@@ -103,7 +103,7 @@ export default function SectionLoggingIn() {
           </Callout>
         </motion.div>
         <motion.div variants={fadeUp}>
-          <ImageZoom src="/images/screenshots/page-07.png" alt="Staxpay.co.uk website with Login button highlighted" />
+          <ImageZoom src="/images/screenshots/clean/login-staxpay-website.png" alt="Staxpay.co.uk website with Login button highlighted" />
         </motion.div>
       </motion.div>
 
@@ -126,7 +126,7 @@ export default function SectionLoggingIn() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <ImageZoom src="/images/screenshots/page-08.png" alt="STAX login screen showing email entry and verification" />
+          <ImageZoom src="/images/screenshots/clean/login-email-entry.png" alt="STAX login screen showing email entry and verification" />
         </motion.div>
       </motion.div>
 
@@ -175,7 +175,7 @@ export default function SectionLoggingIn() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <ImageZoom src="/images/screenshots/page-09.png" alt="Login troubleshooting guidance" />
+          <ImageZoom src="/images/screenshots/clean/login-troubleshooting-tips.png" alt="Login troubleshooting guidance" />
         </motion.div>
       </motion.div>
 
@@ -209,9 +209,6 @@ export default function SectionLoggingIn() {
           </ul>
         </motion.div>
 
-        <motion.div variants={fadeUp}>
-          <ImageZoom src="/images/screenshots/page-10.png" alt="Login tips and logout button" />
-        </motion.div>
       </motion.div>
     </motion.article>
   );

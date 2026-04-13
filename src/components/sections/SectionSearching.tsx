@@ -119,7 +119,7 @@ export default function SectionSearching() {
 
         <motion.div variants={fadeUp}>
           <ImageZoom
-            src="/images/screenshots/page-16.png"
+            src="/images/screenshots/clean/search-date-range.png"
             alt="Date range search controls on the Dashboard"
           />
         </motion.div>
@@ -161,7 +161,7 @@ export default function SectionSearching() {
 
         <motion.div variants={fadeUp}>
           <ImageZoom
-            src="/images/screenshots/page-17.png"
+            src="/images/screenshots/clean/search-box.png"
             alt="Search box and filter options on the Dashboard"
           />
         </motion.div>

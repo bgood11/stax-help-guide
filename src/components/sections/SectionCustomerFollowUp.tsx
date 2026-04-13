@@ -103,18 +103,16 @@ export default function SectionCustomerFollowUp() {
         </motion.div>
 
         <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
-          <ImageZoom src="/images/screenshots/page-19.png" alt="Customer follow-up - refresh dashboard and referred applications" />
-          <ImageZoom src="/images/screenshots/page-20.png" alt="Follow-up on approved applications" />
-        </motion.div>
-
-        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
-          <ImageZoom src="/images/screenshots/page-21.png" alt="Executed applications and deposit paid" />
-          <ImageZoom src="/images/screenshots/page-22.png" alt="Satisfaction note sent" />
-        </motion.div>
-
-        <motion.div variants={fadeUp} className="grid gap-4 md:grid-cols-2">
-          <ImageZoom src="/images/screenshots/page-23.png" alt="Sat note accepted and payout requested" />
-          <ImageZoom src="/images/screenshots/page-24.png" alt="Payout made - LIVE" />
+          <ImageZoom
+            src="/images/screenshots/clean/dashboard-overview.png"
+            alt="STAX Dashboard showing applications, stages and statuses"
+            caption="Your STAX Dashboard - refresh regularly to see the latest updates"
+          />
+          <ImageZoom
+            src="/images/screenshots/clean/app-summary-page.png"
+            alt="Customer summary page with action buttons"
+            caption="Click an AP Number to open the customer summary and access action buttons"
+          />
         </motion.div>
       </motion.div>
     </motion.article>

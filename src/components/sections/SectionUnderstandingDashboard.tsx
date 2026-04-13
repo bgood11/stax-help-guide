@@ -72,7 +72,7 @@ export default function SectionUnderstandingDashboard() {
 
         <motion.div variants={fadeUp}>
           <ImageZoom
-            src="/images/screenshots/page-14.png"
+            src="/images/screenshots/clean/dashboard-overview.png"
             alt="Stax Dashboard overview showing all applications"
           />
         </motion.div>
@@ -125,7 +125,7 @@ export default function SectionUnderstandingDashboard() {
 
         <motion.div variants={fadeUp}>
           <ImageZoom
-            src="/images/screenshots/page-15.png"
+            src="/images/screenshots/clean/dashboard-references.png"
             alt="Application reference details on the Dashboard"
           />
         </motion.div>

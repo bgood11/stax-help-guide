@@ -100,17 +100,17 @@ function SectionLoanAmendments() {
       <StepIndicator steps={amendmentSteps} />
 
       <ImageZoom
-        src="/images/screenshots/page-41.png"
+        src="/images/screenshots/clean/amendment-overview.png"
         alt="Loan Amendment button on the Application Summary screen"
       />
 
       <ImageZoom
-        src="/images/screenshots/page-42.png"
+        src="/images/screenshots/clean/amendment-form-limit.png"
         alt="Amendment pop-up showing Pre-Approved Loan Limit in red"
       />
 
       <ImageZoom
-        src="/images/screenshots/page-43.png"
+        src="/images/screenshots/clean/amendment-form-fields.png"
         alt="Editing Purchase Amount and Deposit with auto-calculated fields"
       />
 
@@ -135,12 +135,12 @@ function SectionLoanAmendments() {
       </Callout>
 
       <ImageZoom
-        src="/images/screenshots/page-44.png"
+        src="/images/screenshots/clean/amendment-calculations.png"
         alt="Amendment submission confirmation message"
       />
 
       <ImageZoom
-        src="/images/screenshots/page-45.png"
+        src="/images/screenshots/clean/amendment-confirmation.png"
         alt="Updated Application Summary showing amended figures"
       />
 
@@ -159,13 +159,8 @@ function SectionLoanAmendments() {
       </section>
 
       <ImageZoom
-        src="/images/screenshots/page-46.png"
+        src="/images/screenshots/clean/amendment-updated-summary.png"
         alt="Application Flow Timeline showing Loan Amendment Submitted entry"
-      />
-
-      <ImageZoom
-        src="/images/screenshots/page-47.png"
-        alt="Requested versus Finalised Terms updated after amendment"
       />
 
       {/* Button Unavailable */}
@@ -197,10 +192,6 @@ function SectionLoanAmendments() {
         </p>
       </section>
 
-      <ImageZoom
-        src="/images/screenshots/page-48.png"
-        alt="Dashboard updated after loan amendment completion"
-      />
     </motion.article>
   );
 }

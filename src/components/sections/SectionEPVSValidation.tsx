@@ -1,177 +1,174 @@
-import { motion } from "framer-motion";
-import ImageZoom from "../ui/ImageZoom";
-import Callout from "../ui/Callout";
-import StepIndicator from "../ui/StepIndicator";
+import { motion } from 'framer-motion';
+import ImageZoom from '../ui/ImageZoom';
+import Callout from '../ui/Callout';
+import StepIndicator from '../ui/StepIndicator';
 
 const validationSteps = [
   {
-    title: "Click Send Sat Note",
+    title: 'Click Send Sat Note',
     description:
-      "From the Application Summary screen, click the Send Satisfaction Note button. Before the satisfaction note is sent, the system requires EPVS validation.",
+      'From the Application Summary screen, click the Send Satisfaction Note button. Before the satisfaction note is sent, the system requires EPVS validation.',
+    screenshot: {
+      src: '/images/screenshots/clean/epvs-send-sat-note.png',
+      alt: 'Send Satisfaction Note button highlighted on the application summary',
+    },
   },
   {
-    title: "Enter EPVS Validation ID",
+    title: 'Enter EPVS Validation ID',
     description:
-      "A dialog will prompt you to enter the EPVS Validation ID. This is a 5-digit numeric code obtained from the EPVS portal under the Validations section. You must register the installation on the EPVS portal first before this ID is available.",
+      'A dialog will prompt you to enter the EPVS Validation ID. This is a 5-digit numeric code obtained from the EPVS portal under the Validations section. You must register the installation on the EPVS portal first before this ID is available.',
+    screenshot: {
+      src: '/images/screenshots/clean/epvs-validate-dialog.png',
+      alt: 'EPVS Validation ID entry dialog',
+    },
   },
   {
-    title: "Click Validate",
+    title: 'Click Validate',
     description:
-      "Click the Validate button to submit the EPVS Validation ID. The system will check the ID against the EPVS portal to confirm the installation has been validated.",
+      'Click the Validate button to submit the EPVS Validation ID. The system will check the ID against the EPVS portal to confirm the installation has been validated.',
   },
   {
-    title: "Receive Success Confirmation",
+    title: 'Receive Success Confirmation',
     description:
-      "If the validation is successful, a green success message will be displayed confirming the EPVS validation has passed. The system checks that both the customer surname AND the Validation ID match the EPVS portal records.",
+      'If the validation is successful, a green success message will be displayed confirming the EPVS validation has passed. The system checks that both the customer surname AND the Validation ID match the EPVS portal records.',
+    screenshot: {
+      src: '/images/screenshots/clean/epvs-success.png',
+      alt: 'EPVS validation success message and Send SAT Note confirmation',
+    },
   },
   {
-    title: "Send the Satisfaction Note",
+    title: 'Send the Satisfaction Note',
     description:
-      "Once validation is confirmed, you can proceed to send the satisfaction note to the customer. The sat note email will be dispatched from STAX (noreply@staxpay.co.uk).",
+      'Once validation is confirmed, you can proceed to send the satisfaction note to the customer. The sat note email will be dispatched from STAX (noreply@staxpay.co.uk).',
   },
 ];
 
-function SectionEPVSValidation() {
+export default function SectionEPVSValidation() {
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="space-y-6"
+      className="space-y-8"
     >
-      <h2 className="text-2xl font-bold text-stax-dark">
-        EPVS Validation
-      </h2>
+      <header>
+        <h2 className="text-3xl font-bold text-stax-dark mb-2">
+          Solar PV & Battery Storage EPVS Validation
+        </h2>
+        <p className="text-lg text-stax-dark/70">
+          If you offer Solar PV or Battery Storage products AND you are EPVS registered, you will
+          be required to enter the EPVS validation number into STAX before you are able to send a
+          satisfaction note to your customer.
+        </p>
+      </header>
 
-      <p className="text-stax-dark leading-relaxed">
-        Before a satisfaction note can be sent to the customer, the installation
-        must be validated against the <strong>EPVS portal</strong>. This
-        validation step ensures that the installation has been properly
-        registered and meets the required standards. You must register the
-        installation on the EPVS portal <strong>before</strong> attempting
-        validation in STAX.
-      </p>
+      <Callout variant="important" title="Before you start">
+        You MUST have already registered the customer's installation and validated it on the EPVS
+        portal before this step can be completed in STAX.
+      </Callout>
 
       <StepIndicator steps={validationSteps} />
 
-      <ImageZoom
-        src="/images/screenshots/page-36.png"
-        alt="Send Satisfaction Note button triggering EPVS validation prompt"
-      />
-
-      <ImageZoom
-        src="/images/screenshots/page-37.png"
-        alt="EPVS Validation ID entry dialog"
-      />
+      <div>
+        <ImageZoom
+          src="/images/screenshots/clean/epvs-portal-validations.png"
+          alt="EPVS portal Validations section showing where to find the Validation ID"
+          caption="The Validation ID can be found in the EPVS portal under Validations - typically a 5-digit number"
+        />
+      </div>
 
       {/* Hints for Successful Validation */}
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold text-stax-teal">
+        <h3 className="text-2xl font-semibold text-stax-teal">
           Hints for Successful Validation
         </h3>
-        <p className="text-stax-dark leading-relaxed">
-          To ensure the EPVS validation passes on the first attempt, make sure
-          the following details on the EPVS portal match the STAX application:
+        <p className="text-stax-dark/80">
+          To ensure the EPVS validation passes on the first attempt, make sure the following
+          details on the EPVS portal match the STAX application:
         </p>
-
         <div className="grid gap-3 sm:grid-cols-2">
-          <div className="rounded-lg border border-gray-200 bg-white p-4">
-            <h4 className="font-semibold text-stax-dark">Name &amp; Address</h4>
-            <p className="mt-1 text-sm text-stax-dark">
-              The customer's name and address on the EPVS portal must exactly
-              match the details on the STAX application.
+          <div className="rounded-lg border border-stax-teal/15 bg-white p-4">
+            <h4 className="font-semibold text-stax-dark">Name & Address</h4>
+            <p className="mt-1 text-sm text-stax-dark/70">
+              Customer Name and Address MUST match the finance agreement exactly.
             </p>
           </div>
-          <div className="rounded-lg border border-gray-200 bg-white p-4">
+          <div className="rounded-lg border border-stax-teal/15 bg-white p-4">
             <h4 className="font-semibold text-stax-dark">Product Type</h4>
-            <p className="mt-1 text-sm text-stax-dark">
-              The product type registered on EPVS must match the product type on
-              the finance application (e.g. windows, doors, conservatory).
+            <p className="mt-1 text-sm text-stax-dark/70">
+              The installation 'Product Type' MUST match the contract and finance agreement.
             </p>
           </div>
-          <div className="rounded-lg border border-gray-200 bg-white p-4">
+          <div className="rounded-lg border border-stax-teal/15 bg-white p-4">
             <h4 className="font-semibold text-stax-dark">Payment Method</h4>
-            <p className="mt-1 text-sm text-stax-dark">
-              The payment method on the EPVS portal must be set to{" "}
-              <strong>Consumer Credit</strong>.
+            <p className="mt-1 text-sm text-stax-dark/70">
+              The 'Payment Method' should be <strong>'Consumer Credit'</strong>.
             </p>
           </div>
-          <div className="rounded-lg border border-gray-200 bg-white p-4">
+          <div className="rounded-lg border border-stax-teal/15 bg-white p-4">
             <h4 className="font-semibold text-stax-dark">Finance Broker</h4>
-            <p className="mt-1 text-sm text-stax-dark">
-              The finance broker field must be set to{" "}
-              <strong>Shermin Finance Limited</strong>.
+            <p className="mt-1 text-sm text-stax-dark/70">
+              Add the 'Finance Broker' as <strong>'Shermin Finance Limited'</strong>.
             </p>
           </div>
         </div>
       </section>
 
-      <ImageZoom
-        src="/images/screenshots/page-38.png"
-        alt="EPVS portal showing validation details and hints"
-      />
-
       {/* Common Error Types */}
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold text-stax-teal">
+        <h3 className="text-2xl font-semibold text-stax-teal">
           Common Validation Errors
         </h3>
-        <p className="text-stax-dark leading-relaxed">
-          If the EPVS validation fails, you will see an error message explaining
-          the reason. Below are the most common error types and how to resolve
-          them:
+        <p className="text-stax-dark/80">
+          When entering the validation ID and clicking 'Validate', you may encounter some error
+          messaging. See below for potential errors and their meaning:
         </p>
 
-        <Callout variant="warning">
-          <p>
-            <strong>Surname Mismatch:</strong> The customer surname on the STAX
-            application does not match the surname registered on the EPVS
-            portal. Double-check for spelling errors, maiden/married name
-            differences, or hyphenated names. Update the EPVS record to match
-            and retry.
-          </p>
-        </Callout>
+        <div className="space-y-4">
+          <Callout variant="warning" title="1. Surname Mismatch">
+            The customer surname does not match our records. Please verify the surname in the
+            EPVS Portal and try again. It is essential that you are inputting the customer's
+            surname correctly on the application AND the EPVS portal.
+          </Callout>
+          <ImageZoom
+            src="/images/screenshots/clean/epvs-error-surname.png"
+            alt="EPVS error: customer surname does not match"
+            className="max-w-md"
+          />
 
-        <Callout variant="warning">
-          <p>
-            <strong>Status Not Validated:</strong> The installation on the EPVS
-            portal has not yet reached "Validated" status. Ensure the
-            installation registration is complete and has been fully validated on
-            the EPVS portal before retrying in STAX.
-          </p>
-        </Callout>
+          <Callout variant="warning" title="2. Validation Status">
+            The status of the certification in the EPVS portal is not showing as 'Validated'. It
+            needs to have a status of 'Validated' on the EPVS portal in order for this check to
+            succeed. Please log into the EPVS portal to check the status and resolve.
+          </Callout>
+          <ImageZoom
+            src="/images/screenshots/clean/epvs-error-status.png"
+            alt="EPVS error: status not validated"
+            className="max-w-md"
+          />
 
-        <Callout variant="warning">
-          <p>
-            <strong>Non-Numeric ID:</strong> The Validation ID entered contains
-            non-numeric characters. The EPVS Validation ID must be a{" "}
-            <strong>5-digit numeric code</strong> only. Remove any letters,
-            spaces, or special characters and retry.
-          </p>
-        </Callout>
+          <Callout variant="warning" title="3. Non-Numeric Characters">
+            EPVS validations are numeric only. If a non-numeric character is entered, this error
+            message will be shown. Please enter a valid EPVS ID.
+          </Callout>
+          <ImageZoom
+            src="/images/screenshots/clean/epvs-error-numeric.png"
+            alt="EPVS error: please enter a valid EPVS ID"
+            className="max-w-md"
+          />
 
-        <Callout variant="warning">
-          <p>
-            <strong>Validation ID Not Found:</strong> The entered Validation ID
-            does not exist on the EPVS portal. Verify the correct ID from the
-            Validations section of the EPVS portal and re-enter it. If the
-            installation has not been registered, complete the registration
-            first.
-          </p>
-        </Callout>
+          <Callout variant="warning" title="4. Validation ID Not Found">
+            This will appear when a completely incorrect validation ID is input. Validation not
+            found in EPVS system. Verify the correct ID from the Validations section of the EPVS
+            portal and re-enter it.
+          </Callout>
+          <ImageZoom
+            src="/images/screenshots/clean/epvs-error-notfound.png"
+            alt="EPVS error: validation not found in EPVS system"
+            className="max-w-md"
+          />
+        </div>
       </section>
-
-      <ImageZoom
-        src="/images/screenshots/page-39.png"
-        alt="EPVS validation error messages"
-      />
-
-      <ImageZoom
-        src="/images/screenshots/page-40.png"
-        alt="Successful EPVS validation confirmation"
-      />
     </motion.article>
   );
 }
-
-export default SectionEPVSValidation;

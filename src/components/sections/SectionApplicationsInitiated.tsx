@@ -121,7 +121,7 @@ export default function SectionApplicationsInitiated() {
 
         <motion.div variants={fadeUp}>
           <ImageZoom
-            src="/images/screenshots/page-18.png"
+            src="/images/screenshots/clean/applications-initiated.png"
             alt="Applications Initiated view on the Dashboard"
           />
         </motion.div>
